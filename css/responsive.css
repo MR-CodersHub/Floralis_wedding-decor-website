@@ -1,0 +1,369 @@
+/* ==========================================================================
+   FLORIST & WEDDING DECORATION - RESPONSIVE STYLESHEET
+   Breakpoints for Desktop, Tablet, and Mobile devices
+   ========================================================================== */
+
+/* --- Header & Navigation Desktop Sizing (Max 1200px) --- */
+@media (max-width: 1200px) {
+  .header-inner {
+    height: 72px;
+    gap: 0.6rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    gap: 0.5rem;
+  }
+
+  .logo-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .nav-menu {
+    gap: 0.75rem;
+  }
+
+  .nav-link {
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    padding: 0.35rem 0;
+    white-space: nowrap;
+  }
+
+  .header-actions {
+    gap: 0.4rem;
+  }
+
+  .header-actions .btn {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.76rem;
+    white-space: nowrap;
+  }
+}
+
+/* --- Desktop Small / Laptops (Max 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-banner-card {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .features-bar {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .story-orange-side {
+    border-radius: 0;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .story-image-side {
+    height: auto;
+    min-height: 280px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .story-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+
+  .artisan-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .artisan-img-wrap {
+    height: auto;
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .artisan-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .occasions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wedding-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+  }
+
+  .footer-newsletter-bar {
+    padding: 1.8rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .footer .container,
+  .footer-bottom .container {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+/* --- Tablet Medium (Max 992px) --- */
+@media (max-width: 992px) {
+  .top-bar {
+    display: none !important;
+  }
+
+  .nav-menu, .header-actions .btn {
+    display: none !important;
+  }
+
+  .header-toggle-btn {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+  }
+
+  .mobile-toggle {
+    display: block !important;
+  }
+}
+
+/* --- Mobile & Tablet Small (Max 768px) --- */
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .features-bar {
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .newsletter-bar {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .occasions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.2rem 1.8rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-newsletter-bar {
+    padding: 1.6rem 1.5rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .footer-newsletter-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer .container,
+  .footer-bottom .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+}
+
+/* --- Small Mobile (Max 480px / 360px) --- */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .section {
+    padding: 2.8rem 0;
+  }
+
+  select, input, textarea, button, img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    white-space: normal;
+    padding: 0.85rem 1.1rem;
+    font-size: 0.88rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  h1, h2, h3, .section-title {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer .container,
+  .footer-bottom .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .footer-newsletter-bar {
+    padding: 1.4rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    display: none !important;
+  }
+
+  .collections-grid, .products-grid, .occasions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-banner-card {
+    padding: 2rem 1.2rem;
+  }
+
+  h2, .section-title {
+    font-size: 1.65rem;
+    line-height: 1.25;
+  }
+
+  .section-title-wrap-flex .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: var(--radius-md);
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .footer-newsletter-form {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .footer-newsletter-input {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-newsletter-btn {
+    width: 100%;
+  }
+
+  .product-price-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+
+  .product-price-row .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* --- Gallery Grid Responsive Rules --- */
+@media (max-width: 992px) {
+  .luxury-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-card--span-8,
+  .gallery-card--span-4,
+  .gallery-card--span-6,
+  .gallery-card--span-12 {
+    grid-column: span 1;
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .luxury-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-card--span-8,
+  .gallery-card--span-4,
+  .gallery-card--span-6,
+  .gallery-card--span-12 {
+    grid-column: span 1;
+    height: 320px;
+  }
+}

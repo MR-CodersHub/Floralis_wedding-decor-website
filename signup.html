@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Floralis Luxury Florist</title>
+  <meta name="description" content="Sign up for a Floralis account to start planning your custom wedding floral styling and reserve consultation dates.">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body style="min-height: 100vh; display: flex; flex-direction: column; background: var(--bg-main);">
+
+  <!-- Clean Header (Brand Logo & Controls Only - No Nav Bar) -->
+  <header class="header">
+    <div class="container header-inner" style="justify-content: space-between;">
+      <a href="index.html" class="logo" style="font-size: 1.6rem; font-weight: 700;">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" width="28" height="28">
+          <path d="M16 4C18.5 8.5 22 10 26 10C25 15.5 21.5 19 16 21C10.5 19 7 15.5 6 10C10 10 13.5 8.5 16 4Z"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M16 11C17.5 13.5 19.5 14.5 22 14.5C21.5 17.5 19.5 19 16 20C12.5 19 10.5 17.5 10 14.5C12.5 14.5 14.5 13.5 16 11Z"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="16" cy="15.5" r="2" fill="currentColor" />
+        </svg>
+        Floralis
+      </a>
+
+      <div class="header-actions">
+        <!-- Dark/Light Theme Toggle -->
+        <button id="themeToggleBtn" class="header-toggle-btn" aria-label="Toggle dark/light theme"
+          title="Toggle Dark/Light Mode">
+          <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+            height="16">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+
+        <!-- RTL/LTR Direction Toggle -->
+        <button id="rtlToggleBtn" class="header-toggle-btn" aria-label="Toggle RTL layout" title="Toggle RTL/LTR Direction">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M17 3l4 4-4 4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 21l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" />
+            <line x1="21" y1="7" x2="3" y2="7" stroke-linecap="round" />
+            <line x1="21" y1="17" x2="3" y2="17" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sign Up Main Content -->
+  <main style="flex: 1; padding: 3rem 0; display: flex; align-items: center; justify-content: center;">
+    <div class="container" style="max-width: 500px;">
+      <div class="auth-card"
+        style="background:var(--bg-card); padding:2.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-card); box-shadow:var(--shadow-md);">
+
+        <!-- Clear Brand Logo & Header inside Card -->
+        <div style="text-align:center; margin-bottom:2rem;">
+          <a href="index.html" class="logo"
+            style="font-size: 2.2rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.6rem; margin-bottom: 1.2rem; text-decoration: none;">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" width="34"
+              height="34" style="color:var(--primary);">
+              <path d="M16 4C18.5 8.5 22 10 26 10C25 15.5 21.5 19 16 21C10.5 19 7 15.5 6 10C10 10 13.5 8.5 16 4Z"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16 11C17.5 13.5 19.5 14.5 22 14.5C21.5 17.5 19.5 19 16 20C12.5 19 10.5 17.5 10 14.5C12.5 14.5 14.5 13.5 16 11Z"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="16" cy="15.5" r="2" fill="currentColor" />
+            </svg>
+            <span style="font-family:var(--font-heading); color:var(--text-dark); letter-spacing:-0.02em;">Floralis</span>
+          </a>
+          <span class="section-badge" style="margin-bottom:0.6rem; display:block;">CLIENT REGISTRATION</span>
+          <h1 style="font-family:var(--font-heading); font-size:2rem; color:var(--text-dark); margin-bottom:0.5rem;">
+            Create Your Account
+          </h1>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.5;">
+            Join Floralis to start planning your custom wedding floral styling and save inspiration moodboards.
+          </p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Account created successfully! Welcome to Floralis.'); window.location.href='login.html';">
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Isabella Rose" required style="width:100%;">
+          </div>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="name@domain.com" required style="width:100%;">
+          </div>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label class="form-label">Phone Number (Optional)</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" style="width:100%;">
+          </div>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label class="form-label">Password</label>
+            <div class="password-input-wrap" style="position:relative; width:100%;">
+              <input type="password" id="signupPassword" class="form-control" placeholder="At least 8 characters" required style="width:100%; padding-right:2.8rem;">
+              <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility('signupPassword', this)" aria-label="Show password" title="Show password" style="position:absolute; right:0.75rem; top:50%; transform:translateY(-50%); background:none; border:none; color:var(--text-muted); cursor:pointer; padding:0.4rem; display:flex; align-items:center; justify-content:center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:flex-start; gap:0.6rem; margin-bottom:1.5rem;">
+            <input type="checkbox" id="termsCheck" required style="margin-top:0.2rem; cursor:pointer;">
+            <label for="termsCheck" style="font-size:0.85rem; color:var(--text-muted); cursor:pointer; line-height:1.4;">
+              I agree to the <a href="terms-of-service.html" style="color:var(--primary); text-decoration:none;">Terms of Service</a> and <a href="privacy-policy.html" style="color:var(--primary); text-decoration:none;">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary"
+            style="width:100%; justify-content:center; padding:0.9rem; font-size:0.95rem;">
+            CREATE FLORALIS ACCOUNT
+          </button>
+        </form>
+
+        <div style="margin-top:2rem; text-align:center; padding-top:1.5rem; border-top:1px solid var(--border-subtle);">
+          <p style="font-size:0.9rem; color:var(--text-muted);">
+            Already have an account?
+            <a href="login.html" style="color:var(--primary); font-weight:700; text-decoration:none; margin-left:0.3rem;">Log In Here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Clean Minimal Copyright Note (No Main Footer) -->
+  <div style="text-align:center; padding:1.2rem 0; color:var(--text-light); font-size:0.85rem;">
+    © 2026 Floralis Luxury Florist & Wedding Design. All rights reserved.
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
